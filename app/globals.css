@@ -19,3 +19,18 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.draggableRow {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.draggableRow:hover {
+  transform: scale(1.02);
+}
+
+.draggableRow.dragging {
+  background-color: rgba(255, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  opacity: 0.9;
+}

@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "red-pattern": "url('/images/background image red.png')", // Replace with actual background URL
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
