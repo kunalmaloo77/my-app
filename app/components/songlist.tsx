@@ -59,9 +59,10 @@ const DraggableSong = ({
       className={`draggableRow hover:bg-[#330000] ${
         currentSong?.src === song.src ? "bg-[#520000]" : ""
       }`}
+      onClick={() => handleSongClick(song)}
     >
       <td className="p-4">
-        <button onClick={() => handleSongClick(song)}>
+        <button>
           {currentSong?.src === song.src ? <FaMusic /> : index + 1}
         </button>
       </td>
